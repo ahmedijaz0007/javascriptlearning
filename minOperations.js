@@ -12,10 +12,10 @@ for (let i =0; i<nums.length;i++){
 }
 
 let sum =0;
-    for(let i of Object.keys(occurrences)){
-        if(occurrences[i] === 1) return -1
+    for(let i of Object.values(occurrences)){
+        if(i === 1) return -1
       
-        sum += Math.ceil(occurrences[i] / 3)
+        sum += Math.ceil(i / 3)
     }
 
     return sum
